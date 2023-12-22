@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="first_name">Имя</string>
+    <string name="second_name">Фамилия</string>
+    <string name="clear">Очистить</string>
+    <string name="add">Добавить</string>
+    <string name="read">Прочитать</string>
+    <string name="student1">Petrova T</string>
+    <string name="student2">Kurmanov I</string>
+    <string name="student3">Leshukova A</string>
+    <string name="student4">Khanmurzaev Kh</string>
+    <string name="authorization">Авторизация</string>
+    <string name="exit">Выход</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="old_password_hint">Текущий пароль</string>
+    <string name="new_password_hint">Новый пароль</string>
+    <string name="login">Войти</string>
+    <string name="ch_pwd">Изменить пароль</string>
+    <string name="change">Изменить</string>
+    <string name="gps">GPS</string>
+    <string name="latidute">Долгота</string>
+    <string name="longitude">Широта</string>
+    <string name="bearing">Азимут</string>
+</resources>

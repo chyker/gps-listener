@@ -64,7 +64,7 @@ class DBInteract : AppCompatActivity(), LocationListener {
         )
         ViewCompat.setBackgroundTintList(
             btnWrite,
-            ContextCompat.getColorStateList(this, android.R.color.background_dark)
+            ContextCompat.getColorStateList(this, android.R.color.system_background_dark)
         )
 
         btnWrite.isEnabled = false
@@ -159,7 +159,7 @@ class DBInteract : AppCompatActivity(), LocationListener {
         tvLongitude = findViewById(R.id.tvLongitude)
         tvBearing = findViewById(R.id.tvBearing)
 
-        lastUpdateTime = SimpleDateFormat("hh:mm:ss").format(location.time)
+        lastUpdateTime = SimpleDateFormat("HH:mm:ss").format(location.time)
 
         lastLatitude =  location.latitude.toString()
         lastLongitude = location.longitude.toString()

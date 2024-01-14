@@ -18,8 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Запрет скриншотов для данного Activity
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
 
+        // Проверка наличия пароля в SharedPreferences. Если отсутствует - устанавливаем "admin".
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
         password = findViewById(R.id.editTextPassword)
 
@@ -30,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Проверка корректности введенного пароля
     fun login(view: android.view.View) {
         providedPassword = password.text.toString()
 

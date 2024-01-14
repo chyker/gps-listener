@@ -2,7 +2,6 @@ package com.example.lab6
 
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,12 +19,6 @@ class ChangePassword : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("MyPrefs", AppCompatActivity.MODE_PRIVATE)
         oldPassword = findViewById(R.id.etOldPwd)
         newPassword = findViewById(R.id.etNewPwd)
-
-        if (sharedPreferences.getString("password", "") == ""){
-            val editor = sharedPreferences.edit()
-            editor.putString("password", "admin")
-            editor.apply()
-        }
     }
 
     fun changePassword (view: android.view.View) {
@@ -46,6 +39,7 @@ class ChangePassword : AppCompatActivity() {
             exit(view)
         }
 
+        // Очищаем поля TextEdit
         oldPassword.setText("")
         newPassword.setText("")
     }
